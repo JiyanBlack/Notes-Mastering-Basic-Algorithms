@@ -25,3 +25,13 @@ Directed uv, u is head, v is tail, it leaves(incident from) u and enters(inciden
 18. A graph is connected if it contains a path between each pair of nodes(same in digraph).
 19. Connected Components: the maximal subgraphs of a graph that are connected
 20. Acyclic graphs: do not have cycles.
+21. Forest is undirected and acyclic graph. 
+22. Tree is the connected components of a forest.
+23. Nodes with degree of one are called leaves. Others are called internal nodes.
+24. The following are the same:
+  1. T is a tree (that is, it is acyclic and connected).
+  2. T is acyclic, and has n–1 edges.
+  3. T is connected, and has n–1 edges.
+  4. Any two nodes are connected by exactly one path.
+  5. T is acyclic, but adding any new edge to it will create a cycle.
+  6. T is connected, but removing any edge yields two connected components.
