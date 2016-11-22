@@ -60,3 +60,10 @@ W = [[0,2,1,3,9,4,_,_], # a
 [_,_,2,_,_,0,2,2], # f  
 [_,_,_,_,_,1,0,6], # g  
 [_,_,_,_,_,9,8,0]] # h  
+## Difference
+The main criterion would probably be the asymptotic
+performance for what you’re doing. For example, looking up the edge (u, v) in an adjacency matrix is
+Θ(1), while iterating over v’s neighbors is Θ(n); in an adjacency list representation, both operations will
+be Θ(d(v)), that is, on the order of the number of neighbors the node has. If the asymptotic complexity of
+your algorithm is the same regardless of representation, you could perform some empirical tests, as
+discussed earlier in this chapter.
