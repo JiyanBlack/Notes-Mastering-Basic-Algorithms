@@ -35,3 +35,20 @@ Directed uv, u is head, v is tail, it leaves(incident from) u and enters(inciden
   4. Any two nodes are connected by exactly one path.
   5. T is acyclic, but adding any new edge to it will create a cycle.
   6. T is connected, but removing any edge yields two connected components.
+
+# Graph Expression
+## Adjancency Lists
+1. [{set},{set}], e.g. N = [  
+{b, c, d, e, f}, # a  
+{c, e}, # b  
+{d}, # c  
+{e}, # d  
+{f}, # e  
+{c, g, h}, # f  
+{f, h}, # g  
+{f, g} # h  
+]  
+2. [[list],[list]]
+3. Weighted Graph: [ {dict}, {dict} ]
+4. {'a': set('bcdef'),'b':set('ce')}
+## Adjancency Matrices
