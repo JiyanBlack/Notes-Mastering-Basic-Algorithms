@@ -52,3 +52,11 @@ Directed uv, u is head, v is tail, it leaves(incident from) u and enters(inciden
 3. Weighted Graph: [ {dict}, {dict} ]
 4. {'a': set('bcdef'),'b':set('ce')}
 ## Adjancency Matrices
+W = [[0,2,1,3,9,4,_,_], # a  
+[_,0,4,_,3,_,_,_], # b  
+[_,_,0,8,_,_,_,_], # c  
+[_,_,_,0,7,_,_,_], # d  
+[_,_,_,_,0,5,_,_], # e  
+[_,_,2,_,_,0,2,2], # f  
+[_,_,_,_,_,1,0,6], # g  
+[_,_,_,_,_,9,8,0]] # h  
