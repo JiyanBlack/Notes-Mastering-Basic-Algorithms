@@ -69,4 +69,15 @@ your algorithm is the same regardless of representation, you could perform some 
 discussed earlier in this chapter.
 
 # Implement Trees
-Any graph implementation can be used to represent tree
+Any graph implementation can be used to represent tree. But specialized tree structures can make trees easier to implement
+and work with.
+## Binary Tree
+```python
+class Tree:
+  def __init__(self, left, right):
+    self.left = left
+    self.right = right
+    You can use the Tree class like this:
+>>> t = Tree(Tree("a", "b"), Tree("c", "d"))
+>>> t.right.left
+'c'```
