@@ -67,3 +67,6 @@ performance for what you’re doing. For example, looking up the edge (u, v) in 
 be Θ(d(v)), that is, on the order of the number of neighbors the node has. If the asymptotic complexity of
 your algorithm is the same regardless of representation, you could perform some empirical tests, as
 discussed earlier in this chapter.
+
+# Implement Trees
+Any graph implementation can be used to represent tree
