@@ -25,3 +25,25 @@ multiplied. This is why we don't care about the base of the logarithmic algorith
 
 k<sup>n</sup>/n<sup>i</sup> = n logk / i logn. So k<sup>n</sup> dominates the polynomial.
 
+# 2-6 
+n<sup>k</sup> dominates any logarithm: k*lg n / lg(lg n). Because lg n always increases much faster than lg(lg n), the
+former dominates the latter.
+
+#2-7
+
+Lists:
+```
+                               Complexity
+Operation     | Example      | Class         | Notes
+--------------+--------------+---------------+-------------------------------
+Index         | l[i]         | O(1)	     |
+Store         | l[i] = 0     | O(1)	     |
+Length        | len(l)       | O(1)	     |
+Append        | l.append(5)  | O(1)	     |
+Pop	      | l.pop()      | O(1)	     | same as l.pop(-1), popping at end
+Clear         | l.clear()    | O(1)	     | similar to l = []
+
+Slice         | l[a:b]       | O(b-a)	     | l[1:5]:O(l)/l[:]:O(len(l)-0)=O(N)
+Extend        | l.extend(...)| O(len(...))   | depends only on len of extension
+Construction  | list(...)    | O(len(...))   | depends on length of ...
+```
