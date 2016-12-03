@@ -13,3 +13,15 @@ B= set(), every time ith entry is initialized in A, run B.add(i). To check if th
 "i in B".
 
 # 2-3
+If f is O(g), then there is a postive constant c that enables f <= c*g, so g >= (1/c) * f. The definition of omega is 
+there is a postive constant m that makes g >= m* f, in this case, m is 1/c.
+As a result, if f is O(g), then g is omega(f)
+
+# 2-4
+log b n = (log a n)/(log a b) is true. In this case, the base can be changed and a new constant(log a b) need to be
+multiplied. This is why we don't care about the base of the logarithmic algorithm. 
+
+# 2-5
+
+k<sup>n</sup>/n<sup>i</sup> = n logk / i logn. So k<sup>n</sup> dominates the polynomial.
+
