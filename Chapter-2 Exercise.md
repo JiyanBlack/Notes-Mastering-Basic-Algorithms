@@ -47,3 +47,14 @@ Slice         | l[a:b]       | O(b-a)	     | l[1:5]:O(l)/l[:]:O(len(l)-0)=O(N)
 Extend        | l.extend(...)| O(len(...))   | depends only on len of extension
 Construction  | list(...)    | O(len(...))   | depends on length of ...
 ```
+For linked list, the list.extend would be O(1). Because only the former_list.tail=latter_list.head need to be set up.
+
+#2-10
+A tree has n leaves, what's the internal nodes m?
+```python
+m*0.5 + m* 0.25 + m*0.125 +....1
+```
+Or a neater solution
+```python
+m=n-1
+```
