@@ -58,3 +58,7 @@ Or a neater solution
 ```python
 m=n-1
 ```
+How to get it:
+```
+m=n/2+n/4+n/8+...1= n(1/2+1/4+...1/n)=n(1-1/n)=n-1
+```
