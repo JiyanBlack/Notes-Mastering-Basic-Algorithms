@@ -54,3 +54,15 @@ So T(n) = T(n-1) + 1= c(n-1) + 1 = cn-c+1 <= cn
 ### Prove divide and conquer algorithm
 Assumption: T(k) <= ck * lgk  
 T(n) = 2T(n/2) + n <= 2c * (n/2 * lg(n/2)) + n = c n lgn
+
+# Master Theorem
+General form:  
+T(n) = aT(n/b) + f(n)  
+To reach the T(n), we need log<sub>b</sub>n height tree.  
+Each internal node has a children. The number of nodes incease a times each level. So the width of the tree
+is a<sup>log<sub>b</sub>n</sup>. 
+a<sup>log<sub>b</sub>n</sup> = n<sup>log<sub>b</sub>a</sup>  
+Prove:
+have ln on both side:
+logbn * lna = logba * lnn  
+lna/lnn = logba/logbn  is always true
