@@ -75,3 +75,12 @@ T(n) = THETA(nlogba)
 ## Case 3: dead race -- both leave and roots have the same asymptotic importance.
 logba == f(n)  
 T(n) = n<sup>logba</sup>lgn  
+
+
+# Three ways to find out recurrences:
+(1) repeatedly apply the original equation to unravel the recursive occurrences of T until you find a 
+pattern; 
+
+(2) guess a solution, and try to prove that it’s correct using induction; 
+
+(3) for divide and conquer recurrences that fit one of the cases of the master theorem, simply use the corresponding solution.
