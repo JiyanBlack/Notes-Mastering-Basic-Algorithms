@@ -65,13 +65,13 @@ a<sup>log<sub>b</sub>n</sup> = n<sup>log<sub>b</sub>a</sup>
 Prove:
 have ln on both side:
 logbn * lna = logba * lnn  
-lna/lnn = logba/logbn  is always true
+lna/lnn = logba/logbn  is always true  
 ## Case 1: Most jobs are done in the root.
-logba < f(n) (splitting slower)
-T(n) = THETA(f(n))
+logba < f(n) (splitting slower)  
+T(n) = THETA(f(n))  
 ## Case 2: Most jobs are done in the leaves.
-logba > f(n) (generating leaves faster)
-T(n) = THETA(nlogba)
+logba > f(n) (generating leaves faster)  
+T(n) = THETA(nlogba)  
 ## Case 3: dead race -- both leave and roots have the same asymptotic importance.
-logba == f(n)
-T(n) = n<sup>logba</sup>lgn
+logba == f(n)  
+T(n) = n<sup>logba</sup>lgn  
