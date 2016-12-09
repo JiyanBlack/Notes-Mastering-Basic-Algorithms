@@ -20,3 +20,34 @@ T(n) = a * T(g(n)) + f(n)
 * g(n): the size of each subproblem to be solved
 * f(n): extra work done each call besides the recursive part
 
+## Examples:
+### T(n) = T(n/2) + 1
+T(n)= (T(n/4) + 1) + 1 
+...
+T(n) = T(n/2<sup>i</sup>) + i
+if i == log<sub>2</sub><sup>4</sup>, T(n)=T(1)(constant) + logn
+
+### T(n) = T(n/2) + n
+T(n) = T(n/2) + n = (T(n/4) + n/2) + n = T(n/2<sup>i</sup>) + n/2<sup>i-1</sup> + n/2<sup>i-2</sup>
++...+n
+
+T(n) = T(1) + n*(1-0.5)<sup>i</sup>/(1-0.5) , i=lgn  
+T(n) = n  
+
+### T(n) = 2T(n/2) + n
+
+T(n) = 2(2T(n/4)+n/2) + n  = 4T(n/4) + n + n
+= 4(2T(n/8) + n/4) + n + n = 8T(n/8) + n + n + n =  ....   
+= 2<sup>i</sup>T(n/2<sup>i</sup>) + i*n  
+i=lgn, T(n) = nlgn + n
+
+## Guessing and Checking
+### Induction (数学归纳法)
+For example, assume that T(n) = T(n-1) + 1 is O(n) and T(1)=1.  
+T(n) < cn.
+
+Start at T(1), and apply to the T(2) ... and so forth. And if our solution is correct for T(n-1), 
+it's true for T(n).
+
+Assume: T(n)< cn (c>=1)
+So T(n) = T(n-1) + 1= c(n-1) + 1 = cn-c+1 <= cn
