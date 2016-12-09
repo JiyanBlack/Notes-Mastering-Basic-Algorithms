@@ -51,3 +51,6 @@ it's true for T(n).
 
 Assume: T(n)< cn (c>=1)
 So T(n) = T(n-1) + 1= c(n-1) + 1 = cn-c+1 <= cn
+### Prove divide and conquer algorithm
+Assumption: T(k) <= ck * lgk  
+T(n) = 2T(n/2) + n <= 2c * (n/2 * lg(n/2)) + n = c n lgn
