@@ -57,7 +57,7 @@ T(n) = 2T(n/2) + n <= 2c * (n/2 * lg(n/2)) + n = c n lgn
 
 # Master Theorem
 General form:  
-T(n) = aT(n/b) + f(n)  
+T(n) = aT(n/b) + O(n<sup>d</sup>)
 To reach the T(n), we need log<sub>b</sub>n height tree.  
 Each internal node has a children. The number of nodes incease a times each level. So the width of the tree
 is a<sup>log<sub>b</sub>n</sup>. 
@@ -67,13 +67,13 @@ have ln on both side:
 logbn * lna = logba * lnn  
 lna/lnn = logba/logbn  is always true  
 ## Case 1: Most jobs are done in the root.
-logba < f(n) (splitting slower)  
+a < b^d (splitting slower)  
 T(n) = THETA(f(n))  
 ## Case 2: Most jobs are done in the leaves.
-logba > f(n) (generating leaves faster)  
+a > b^d (generating leaves faster)  
 T(n) = THETA(nlogba)  
 ## Case 3: dead race -- both leave and roots have the same asymptotic importance.
-logba == f(n)  
+a = b^d  
 T(n) = n<sup>logba</sup>lgn  
 
 
